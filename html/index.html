@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>digital post</title>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">digital post</a></h1>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Service">Service</a></li>
+            <li><a href="#About">About us</a></li>
+            <li class="click-Login" onclick="SignUp.style.display='block'"><a href="#Login">Login</a></li>
+        </ul>
+    </header>
+    <form class="login">
+        <span class="close" onclick="SignUp.style.display='none'"><i class="fa fa-x"></i></span>
+        <i class="fa fa-user" id="img-user"></i>
+        <h2>Subscribe as doctor</h2>
+        <input id="input-First-Name" type="text" placeholder="Enter First Name" />
+        <input id="input-Family-Name" type="text" placeholder="Enter Family Name" />
+        <input id="input-Username-or-Email" type="text" placeholder="Enter Email" />
+        <input id="input-password" type="password" placeholder="Enter password" />
+        <i class="fa-solid fa-eye img-eye" onclick="MyClick()"></i>
+        <i class="fa-solid fa-eye-slash" id="img-eye-off" onclick="MyClick()"></i>
+        <button class="btn-login"><a href="main.html">Login</a></button>
+        <div>
+            <span class="span-left"></span>
+            <span class="span-center">or</span>
+            <span class="span-right"></span>
+        </div>
+        <div class="login-account">You Have An Account ?
+            <a id="login-account" href="login.html">login</a>
+        </div>
+    </form>
+
+
+
+
+
+
+
+    <!-- script -->
+    <script src="../js/all.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/SignUp.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK -->
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <title>login 2</title>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">digital post</a></h1>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Service">Service</a></li>
+            <li><a href="#About">About us</a></li>
+    </header>
+    <form id="login">
+        <i class="fa fa-user" id="img-user"></i>
+        <h2>login</h2>
+        <input class="input-Username-or-Email" type="text" placeholder="Enter Email" />
+        <input class="input-password" type="password" placeholder="Enter password" />
+        <i class="fa-solid fa-eye" id="img-eye" onclick="MyClick()"></i>
+        <i class="fa-solid fa-eye-slash img-eye-off" onclick="MyClick()"></i>
+        <button id="btn-login"><a href="main.html">Login</a></button>
+        <div>
+            <span id="span-left"></span>
+            <span id="span-center">or</span>
+            <span id="span-right"></span>
+        </div>
+        <p id="Forgot-pass"><a href="#">Forgot password ?</a></p>
+        <div class="sign-up">do you have an account ?
+            <a id="sign-up" href="SignUp.html">Subscribe as doctor</a>
+        </div>
+    </form>
+    <!-- script -->
+    <script src="../js/login.js"></script>
+    <script src="../js/all.js"></script>
+    <script src="../js/all.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/form.css">
+    <title>speaker project</title><!--  changing the name -->
+</head>
+
+<body>
+    <header>
+        <h1><a href="#">digital post</a></h1>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </header>
+
+    <div class="speaker">
+        <h2 class="h1" id="zero" onclick="read('zero')">Anmeldung zur Hundesteuer</h2>
+        <!-- It's the blue comma -->
+        <div class="comma"></div>
+        <div class="Contents">
+            <label id="one" class="label" onclick="read('one')"> Herr und Frau : </label>
+            <div>
+                <input id="input-one" class="inpt" type="text" placeholder="Name" />
+                <button class="btn-Enter" onmousedown="start_record('input-one')">click to talk</button>
+            </div>
+        </div>
+        <div class="Contents">
+            <label id="two" class="label" onclick="read('two')"> Geb-datum : </label>
+            <div>
+                <input id="input-two" class="inpt" type="text" placeholder="Date" />
+                <button class="btn-Enter" onmousedown="start_record('input-two')">click to talk</button>
+            </div>
+        </div>
+        <div class="Contents">
+            <label id="three" class="label" onclick="read('three')"> wohnhaft in : </label>
+            <div>
+                <input id="input-three" class="inpt" type="text" placeholder="Living" />
+                <button class="btn-Enter" onmousedown="start_record('input-three')">click to talk</button>
+            </div>
+        </div>
+        <div class="Contents">
+            <label id="four" class="label" onclick="read('four')"> Telefonnummer : </label>
+            <div>
+                <input id="input-four" class="inpt" type="text" placeholder="the phone" />
+                <button class="btn-Enter" onmousedown="start_record('input-four')">click to talk</button>
+            </div>
+        </div>
+        <div class="comma2"></div>
+        <h2 class="h2" id="five" onclick="read('five')">meldet folgenden Hund an :</h2>
+        <!-- It's the blue comma -->
+        <div class="comma"></div>
+        <div class="Sex">
+            <label id="Nine" class="label" id="Nine" onclick="read('Nine')">Sex :</label>
+            <form class="form">
+                <input type="radio" value="Male" name="name" />
+                <label for="Male" id="Male" onclick="read('Male')">Male</label><br>
+                <input type="radio" value="feminine" name="name" />
+                <label for="feminine" id="feminine" onclick="read('feminine')">feminine</label>
+            </form>
+        </div>
+        <div id="trade-mark">
+            <h5 id="six" class="label" onclick="read('six')">Ausgegeben :</h5>
+            <input id="input-six" type="text" placeholder="trade mark" />
+            <br>
+            <button id="t-mark" onmousedown="start_record('input-six')">click to talk</button>
+        </div>
+        <div id="export">
+            <h5 id="Seven" class="label" onclick="read('Seven')">Marke Nr :</h5>
+            <input id="input-Seven" type="text" placeholder="export" />
+            <button id="t-Ausgegeben" onmousedown="start_record('input-Seven')">click to talk</button>
+        </div>
+        <div class="Contents">
+            <label id="eight" class="label" onclick="read('eight')"> Rasse des Hundes : </label>
+            <div>
+                <input id="input-eight" class="inpt" type="text" placeholder="dog breed" />
+                <button class="btn-Enter" onmousedown="start_record('input-eight')">click to talk</button>
+            </div>
+        </div>
+        <div class="Contents">
+            <label id="Ten" class="label" onclick="read('Ten')">Geburtsdatum oder Alter des Hundes :</label>
+            <div>
+                <input id="input-Ten" class="inpt" type="number" placeholder="dog birthday" />
+                <button class="btn-Enter" onmousedown="start_record('input-Ten')">click to talk</button>
+            </div>
+        </div>
+        <div class="Contents">
+            <label id="eleven" class="label" onclick="read('eleven')">Hundehaltung :</label>
+            <div>
+                <input id="input-eleven" class="inpt" type="text" placeholder="dog ownership" />
+                <button class="btn-Enter" onmousedown="start_record('input-eleven')">click to talk</button>
+            </div>
+        </div>
+        <div class="Contents">
+            <label id="Twelve" class="label" onclick="read('Twelve')">Wie viele andere Hunde im selben Haus :</label>
+            <div>
+                <input id="input-Twelve" class="inpt" type="number" placeholder="number of dogs" />
+                <button class="btn-Enter" onmousedown="start_record('input-Twelve')">click to talk</button>
+            </div>
+        </div>
+        <div class="Contents">
+            <label id="Thirteen" class="label" onclick="read('Thirteen')">Der Name des Besitzers des anderen Hundes oder
+                der anderen Hunde :</label>
+            <div>
+                <input id="input-Thirteen" class="inpt" type="text" placeholder="the owner's name" />
+                <button class="btn-Enter" onmousedown="start_record('input-Thirteen')">click to talk</button>
+            </div>
+        </div>
+        <div class="Contents">
+            <label id="Fourteen" class="label" onclick="read('Fourteen')">Vorbesitzername :</label>
+            <div>
+                <input id="input-Fourteen" class="inpt" type="text" placeholder="Previous owner name" />
+                <button class="btn-Enter" onmousedown="start_record('input-Fourteen')">click to talk</button>
+            </div>
+        </div>
+        <div class="comma2"></div>
+        <h2 class="h3" id="basic-information" onclick="read('basic-information')">Persönliche Daten :</h2>
+        <div class="comma"></div>
+        <div class="Contents">
+            <label id="Fiveteen" class="label" onclick="read('Fiveteen')">Vorname :</label>
+            <div>
+                <input id="input-Fiveteen" class="inpt" type="text" placeholder="Forename" />
+                <button class="btn-Enter" onmousedown="start_record('input-Fiveteen')">click to talk</button>
+            </div>
+        </div>
+        <div class="Contents">
+            <label id="Sixteen" class="label" onclick="read('Sixteen')">Nachname :</label>
+            <div>
+                <input id="input-Sixteen" class="inpt" type="text" placeholder="family name" />
+                <button class="btn-Enter" onmousedown="start_record('input-Sixteen')">click to talk</button>
+            </div>
+        </div>
+        <div class="Contents">
+            <label id="Seventeen" class="label" onclick="read('Seventeen')">Straße :</label>
+            <div>
+                <input id="input-Seventeen" class="inpt" type="text" placeholder="street" />
+                <button class="btn-Enter" onmousedown="start_record('input-Seventeen')">click to talk</button>
+            </div>
+        </div>
+        <div class="Contents">
+            <label id="Eighteen" class="label" onclick="read('Eighteen')">Hausnummer :</label>
+            <div>
+                <input id="input-Eighteen" class="inpt" type="number" placeholder="house number" />
+                <button class="btn-Enter" onmousedown="start_record('input-Eighteen')">click to talk</button>
+            </div>
+        </div>
+        <div class="Contents">
+            <label id="Nineteen" class="label" onclick="read('Nineteen')">Seite? ˅ :</label>
+            <div>
+                <input id="input-Nineteen" class="inpt" type="text" placeholder="Site" />
+                <button class="btn-Enter" onmousedown="start_record('input-Nineteen')">click to talk</button>
+            </div>
+        </div>
+        <div class="twenty">
+            <label id="twenty" class="label" id="Nine" onclick="read('twenty')">War dieser Hund beim Vorbesitzer
+                angemeldet? :</label>
+            <form class="form2">
+                <input type="radio" value="Yas" name="choices" />
+                <label for="Yas" id="Yas" onclick="read('Yas')">Yas</label>
+                <input type="radio" value="No" name="choices" />
+                <label for="No" id="No" onclick="read('No')">No</label>
+            </form>
+        </div>
+        <div class="Contents">
+            <label id="twenty-one" class="label" onclick="read('twenty-one')">
+                Steuerermäßigung- oder Steuer Befreiungsgründe für Hunde, die nicht
+                <br>
+                unter den Tatbestand der gefährlichen Hunde fallen
+                <br>
+                ($ 3 Abs. 2 der Hundesteuersatzung) Nachweise sind beizufügen :
+            </label>
+            <div>
+                <textarea cols="30"
+                    style="padding: 10px 10px 115px 10px; max-width: 450px; min-width: 450px; max-height: 150px; min-height: 150px;"
+                    id="input-twenty-one" class="inpt" type="text" placeholder="Enter the reasons" rows="10"
+                    required></textarea>
+                <button class="btn-Enter" onmousedown="start_record('input-twenty-one')">click to talk</button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <label id="twenty-two" class="label" onclick="read('twenty-two')">Anmerkungen :</label>
+    <hr>
+    <p id="Thirty-three" class="label" onclick="read('Thirty-three')">Hund, der in bewohntem Gebäude gehalten wird,
+        welches vom nächsten bewohnten Gebäude mehr als 200 m<br>
+        Luftlinie entfernt liegt Hund, der ausschließlich der Erfüllung öffentlicher Aufgaben dient<br>
+        Sanitäts- und Rettungshunde Diensthunde, mit jagdrechtlich normierter Brauchbarkeitsprüfung<br>
+        Herdengebrauchshund geeignete Zuchthunde, die in Ausübung eines Gewerbes der Hundezucht mit<br>
+        mindestens zwei rassereinen Hune gehalten werden und deren Halter im Besitz der besonderen<br>
+        Erlaubnis nach § 11 Abs. 1 Nr. 8 Tierschutzgesetz ist. abgerichtete Hunde von Artisten und<br>
+        Schaustellern für berufliche Zwecke Hund, der zum Schutz, Führung und Hilfe einer blinder,<br>
+        hochgradig sehbehinderter, gehörlosen, hochgradig schwerhörigen oder hilflosen Person<br>
+        gehalten wird. Berechtigte Merkzeichen im Schwerbehindertenausweis<br>
+        sind: G, aG, B, H, BI, GI und RF. derselben Rasse zuchtfähigem Alter, darur einer Hündin,</p>
+    <hr>
+    <div class="ml">
+        <div class="Contents">
+            <label id="Twenty-four" class="label" onclick="read('Twenty-four')">das Datum :</label>
+            <div style="display: inline-block;">
+                <input id="input-Twenty-four" class="inpt" type="text" placeholder="Site" />
+            </div>
+            <button class="btn-Enter" onmousedown="start_record('input-Twenty-four')">click to talk</button>
+        </div>
+        <div class="Contents">
+            <label id="twenty-five" class="label" onclick="read('twenty-five')">Unterschrift :</label>
+            <div style="display: inline-block;">
+                <input id="input-twenty-five" class="inpt" type="text" placeholder="Site" />
+            </div>
+            <button class="btn-Enter" onmousedown="start_record('input-twenty-five')">click to talk</button>
+        </div>
+    </div>
+    <hr>
+    <hr>
+    <footer id="footer">
+        <label id="twenty-six" class="label" onclick="read('twenty-six')" style="margin-top: 10px;">HINWEISE :</label>
+        <p style="font-size: 15px;" id="twenty-seven" class="label" onclick="read('twenty-seven')">Bei Anmeldung
+            gleichzeitig, auszufüllen. Für die Einzugsermächtigung der Hundesteuer füllen Sie bitte das Formular über
+            die „Erteilung eines SEPA-Lastschriftmandats“</p>
+        <label id="Twenty-eight" class="label" onclick="read('Twenty-eight')"
+            style="margin-top: 10px;">Datenschutzhinweis :</label>
+        <p style="font-size: 15px;" id="Twenty-nine" class="label" onclick="read('Twenty-nine')">Informationen über die
+            Verarbeitung personenbezogener Daten im Fachdienst Finanzen der Stadtverwaltung Gera und über Ihre Rechte
+            nach der Datenschutzgrundverordnung sowie über Ihre Ansprechpartner in Datenschutzfragen entnehmen Sie bitte
+            dem allgemeinen Informationsschreiben der Finanzverwaltung der Stadtverwaltung Gera, Dieses finden Sie unter
+            www.gera.de/datenschutz. Auf Wunsch übersenden wir diese Informationen auch in Papierform.</p>
+    </footer>
+    <script src="../js/form.js"></script>
+</body>
+
+</html>
